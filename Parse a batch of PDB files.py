@@ -7,6 +7,7 @@ parser = MMCIFParser()
 # \U in "C:\Users... starts an eight-character Unicode escape, such as \U00014321
 # You either need to duplicate all backslashes or prefix the string with r (to produce a raw string)
 
+# Assuming the downloaded files are saed by their default filenames
 # pdb_files = glob(r'required_file_location\*')
 pdb_files = glob(r'C:\Users\saySa\OneDrive\Desktop\pdbfiles\*')
 
