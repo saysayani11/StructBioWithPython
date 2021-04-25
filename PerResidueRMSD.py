@@ -102,11 +102,11 @@ per_residue_rmsd=np.sqrt(d_i)
 avg_rms=np.sum(per_residue_rmsd)/length
 #--------------------------------------------------------------
 
-# #--Plot
-# import matplotlib.pyplot as plt
-# plt.figure(figsize=(70,30))
-# plt.plot(per_residue_rmsd,color='blue',marker='o',markerfacecolor='red',markersize=5)
-# plt.savefig("test.tiff",dpi=600)
+#--Plot
+import matplotlib.pyplot as plt
+plt.figure(figsize=(70,30))
+plt.plot(per_residue_rmsd,color='blue',marker='o',markerfacecolor='red',markersize=5)
+plt.savefig("test.tiff",dpi=600)
 
 #--3D Plot
 import matplotlib.pyplot as plt
@@ -115,18 +115,10 @@ from mpl_toolkits.mplot3d import Axes3D
 fig = plt.figure(figsize = (100, 100))
 ax = fig.add_subplot(444, projection='3d')
 ax.scatter(x_ci,y_ci,z_ci,s=100, color='orange')
-
 ax.scatter(x_di,y_di,z_di,s=100)
 
 plt.show()
 
-
-# fig = plt.figure()
-# ax = fig.add_subplot(111, projection='3d')
-# pnt3d=ax.scatter(x,y,z,c=z)
-# cbar=plt.colorbar(pnt3d)
-# cbar.set_label("Values (units)")
-# plt.show()
 
 
 
