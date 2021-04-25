@@ -3,7 +3,6 @@
 import pandas as pd
 import numpy as np
 from pandas import DataFrame
-from sklearn.decomposition import PCA
 from numpy import linalg as LA
 import matplotlib.pyplot as plt
 import seaborn as sns; sns.set()
