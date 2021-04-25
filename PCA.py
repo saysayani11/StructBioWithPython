@@ -24,8 +24,6 @@ pca = PCA(n_components=2, svd_solver='full')
 projected = pca.fit_transform(df_std)
 
 # Check the projected data's dimensions, reduced to the specified number of components
-# print(dist_data.shape)
-# print(projected.shape)
 # original shape:    (270,19)
 # transformed shape: (270,2)
 
