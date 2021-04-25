@@ -103,10 +103,13 @@ avg_rms=np.sum(per_residue_rmsd)/length
 #--------------------------------------------------------------
 
 #--Plot
+import matplotlib
 import matplotlib.pyplot as plt
 plt.figure(figsize=(70,30))
-plt.plot(per_residue_rmsd,color='blue',marker='o',markerfacecolor='red',markersize=5)
+plt.plot(per_residue_rmsd,color='blue',marker='o',markerfacecolor='red',markersize=7)
 plt.savefig("test.tiff",dpi=600)
+matplotlib.rc('xtick', labelsize=30) 
+matplotlib.rc('ytick', labelsize=30)
 
 #--3D Plot
 import matplotlib.pyplot as plt
@@ -116,36 +119,5 @@ fig = plt.figure(figsize = (100, 100))
 ax = fig.add_subplot(444, projection='3d')
 ax.scatter(x_ci,y_ci,z_ci,s=100, color='orange')
 ax.scatter(x_di,y_di,z_di,s=100)
-
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
